@@ -13,7 +13,6 @@ import no.hvl.dat110.aciotdevice.pins.Wiring;
 import no.hvl.dat110.aciotdevice.ui.LED;
 import no.hvl.dat110.aciotdevice.ui.PIRSensor;
 import no.hvl.dat110.aciotdevice.ui.PushButton;
-import javafx.scene.control.Button;
 
 public class Main extends Application {
 
@@ -36,11 +35,11 @@ public class Main extends Application {
 		IOPins iopins = new IOPins(greenled,yellowled,redled,blueled);
 		
 		// sensors
-		PushButton pbtn1 = new PushButton("1",iopins,Wiring.PUSHBTN1);
-		PushButton pbtn2 = new PushButton("2",iopins,Wiring.PUSHBTN2);
+		PushButton pbtn1 = new PushButton("1",iopins,Wiring.BUTTONA);
+		PushButton pbtn2 = new PushButton("2",iopins,Wiring.BUTTONB);
 		PushButton nbtn = new PushButton("N",iopins,Wiring.PUSHNET);
 		
-		PIRSensor pirsensor = new PIRSensor("PIR",iopins,Wiring.PIR);
+		PIRSensor pirsensor = new PIRSensor("PIR",iopins,Wiring.SENSOR);
 
 		HBox btnhbox = new HBox(pbtn1,pbtn2,nbtn);
 	
@@ -66,9 +65,10 @@ public class Main extends Application {
 	public void btn1click () {
 		
 	}
+	
 	public static void main(String[] args) {
 			
-			Application.launch(args);
+		Application.launch(args);
 			
-		}
+	}
 }

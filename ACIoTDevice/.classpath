@@ -6,7 +6,10 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JavaFX"/>
 	<classpathentry kind="lib" path="libs/gson-2.8.6.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JavaFX17"/>
+	<classpathentry kind="lib" path="C:/Users/Aleksandar/git/dat110-project4-startcode-iotdevice/ACIoTDevice/libs/okhttp-4.9.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Aleksandar/git/dat110-project4-startcode-iotdevice/ACIoTDevice/libs/kotlin-stdlib-1.6.20.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Aleksandar/git/dat110-project4-startcode-iotdevice/ACIoTDevice/libs/okio-2.8.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
